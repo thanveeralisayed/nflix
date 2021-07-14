@@ -1,14 +1,17 @@
 .banner {
-    background-image: url("https://otakukart.com/wp-content/uploads/2021/04/Untitled-design-51.jpg");
     background-size: cover;
     margin-top: 70px;
     padding-top: 40px;
     padding-bottom: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.banner > img {
+    max-height: 720px;
 }
 
 .content {
-    padding: 20px;
+    padding: 70px;
 }
 
 .banner-buttons {
@@ -34,7 +37,8 @@
 
 h1{
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 40px;
 }
 
 .fade-bottom {

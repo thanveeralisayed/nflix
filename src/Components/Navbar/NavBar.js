@@ -6,7 +6,7 @@ function NavBar() {
         <div className="navbar">
             <h1 className="logo">NECKFLISK</h1>
 
-            <a className="u-name" href="#">Melon Husk</a>
+            <a className="u-name">Melon Husk</a>
         </div>
     )
 }
