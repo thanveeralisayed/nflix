@@ -7,3 +7,11 @@
 body {
     background-color: #111;
 }
+
+.Navbar {
+    position: fixed;
+}
+
+.Main {
+    margin-top: 80px;
+}

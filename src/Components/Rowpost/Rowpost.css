@@ -1,4 +1,5 @@
 .row {
+    box-sizing: border-box;
     color: white;
     margin-left: 20px;
     margin-top: 10px;
@@ -6,12 +7,35 @@
 
 
 .posters {
+    box-sizing: border-box;
     display: flex;
     padding: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
     
 }
+
+.movie-desc {
+    position: inherit;
+    visibility: hidden;
+    transform: translateY(-230px);
+    text-align: center;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-weight: 800;
+    margin-right: 10px;
+    font-size: 80%;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.poster-box {
+    box-sizing: border-box;
+    height:255px;
+}
+
 
 .posters::-webkit-scrollbar{
     display: none;
@@ -21,4 +45,86 @@
     max-height: 250px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.smallPoster {
+    max-height: 100px;
+}
+
+.b-title {
+    background-color: rgba(0, 0, 0, 0.432);
+    box-sizing:border-box;
+    position: inherit;
+    text-align: center;
+    cursor: pointer;
+    width: inherit;
+    margin-right: 10px;
+    transform: translateY(-74px);
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 15px;
+    
+    
+    
+}
+
+.poster:hover~.b-title {
+    animation: titleup;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
+.b-title:hover{
+    animation: titleup;
+    animation-delay: 300ms;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.poster:hover~.movie-desc {
+    animation: desc-vis;
+    animation-delay: 500ms;
+    animation-duration: 5500ms;
+    animation-fill-mode: forwards;
+}
+
+.b-title:hover~.movie-desc {
+    animation: desc-vis;
+    animation-delay: 500ms;
+    animation-duration: 3500ms;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+}
+
+.m-title {
+    text-align: center;
+}
+
+
+
+@keyframes titleup {
+    from {
+       
+    }
+
+    to {
+        transform: translateY(-230px);
+        padding-bottom: 130;
+    }
+}
+
+@keyframes desc-vis {
+    from {
+
+    }
+
+    to {
+        visibility: visible;
+    }
 }
