@@ -4,6 +4,7 @@ import Banner from './Components/Banner/Banner';
 import CarouselComponent from './Components/Carousel/CarouselComponent';
 import NavBar from './Components/Navbar/NavBar';
 import Rowpost from './Components/Rowpost/Rowpost';
+import { more, originals } from './urls';
 
 
 
@@ -21,12 +22,12 @@ function App() {
               
               {/* <CarouselComponent/> */}
               <Banner/>
-              <Rowpost  title="Neckflix Originals" ptype="backdrop_path" nOriginals />
-              <Rowpost  title="More Originals" ptype="poster_path"  more pgnum = "2"  />
-              <Rowpost  title="" ptype="poster_path"  more pgnum = "3"  />
-              <Rowpost  title="" ptype="poster_path"  more pgnum = "4"  />
-              <Rowpost  title="" ptype="poster_path"  more pgnum = "5"  />
-              <Rowpost  title="" ptype="poster_path"  more pgnum = "6"  />
+              <Rowpost  title="Neckflix Originals" ctype = {originals} original />
+              <Rowpost  title="More Originals" ctype = {more(2)}  more   />
+              <Rowpost  title="" ptype="poster_path" ctype = {more(3)}  more />
+              <Rowpost  title="" ptype="poster_path" ctype = {more(4)}  more />
+              <Rowpost  title="" ptype="poster_path" ctype = {more(5)}  more />
+              <Rowpost  title="" ptype="poster_path" ctype = {more(6)}  more />
               
 
           </div>   

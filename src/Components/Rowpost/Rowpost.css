@@ -59,12 +59,12 @@
     cursor: pointer;
     width: inherit;
     margin-right: 10px;
-    transform: translateY(-74px);
+    transform: translateY(-64px);
     font-size: 18px;
     font-weight: 600;
     overflow: hidden;
     padding: 15px;
-    
+    font-size: 15px;
     
     
 }
