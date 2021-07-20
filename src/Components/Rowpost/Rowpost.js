@@ -42,7 +42,7 @@ function Rowpost(props) {
                    ) : movies.map((movie,pos)=>
                    <div className="poster-box">
                        <img key={pos} src={smImage_url+movie.poster_path} alt="" className="poster" /> 
-                       <h3 className="b-title">{movie.title.split(" ").splice(0,5).join(" ") }</h3> 
+                       <h3 className="b-title">{movie.title.split(" ").splice(0,4).join(" ") }</h3> 
                        <p className="movie-desc">{movie.overview.split(" ").splice(0,20).join(" ") + '..'}
                        </p> 
                        </div> 
