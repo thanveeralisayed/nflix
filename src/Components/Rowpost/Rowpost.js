@@ -10,6 +10,7 @@ function Rowpost(props) {
     let trailerUrl = '';
 
     const [movies, setMovies] = useState([])
+    const [vidkey, setVidkey] = useState()
     
     
 
@@ -22,9 +23,11 @@ function Rowpost(props) {
                 setMovies(Response.data.results)
                   
             })
+
+            
          
 
-    }, []);
+    }, [vidkey]);
 
     const handleMovieClick = (id) => {
        
@@ -34,11 +37,21 @@ function Rowpost(props) {
             if(vids)
             {
                 console.log(vids.key);
+                setVidkey(vids.key)
                 
             }
         })
          
     }
+
+    const opts = {
+        height: '390',
+        width: '100%',
+        playerVars: {
+          // https://developers.google.com/youtube/player_parameters
+          autoplay: 0,
+        },
+      };
     
 
 
@@ -68,6 +81,7 @@ function Rowpost(props) {
                 
                     
             </div>
+            {vidkey && <YouTube videoId={props.vidkey} opts={opts} /> }
         </div>
     )
 }

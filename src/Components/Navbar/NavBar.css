@@ -10,14 +10,36 @@
     color: white;
 } 
 
-.u-name {
+.tv-nav {
     text-decoration: none;
     top: 25px;
     font-weight: 600;
-    right: 20px;
+    right: 110px;
     color: white;
     position: fixed;
     cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.mv-nav {
+    text-decoration: none;
+    top: 25px;
+    font-weight: 600;
+    right: 40px;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.tv-nav:hover{
+    background-color: rgba(188, 182, 212, 0.24);
+}
+
+.mv-nav:hover{
+    background-color: rgba(188, 182, 212, 0.24);
 }
 
 .logo{

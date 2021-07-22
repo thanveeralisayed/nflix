@@ -6,7 +6,8 @@ function NavBar() {
         <div className="navbar">
             <h1 className="logo">NECKFLIX</h1>
 
-            <a className="u-name">MENU ITEMS</a>
+            <a className="tv-nav">TV SHOWS</a>
+            <a className="mv-nav">MOVIES</a>
         </div>
     )
 }
