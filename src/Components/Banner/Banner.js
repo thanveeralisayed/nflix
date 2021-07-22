@@ -11,7 +11,7 @@ function Banner() {
     useEffect(() => {
         axios.get(`trending/all/day?api_key=${Api_Key}`).then((Response)=>{
             // console.log(Response.data.results[0]);
-            setMovie(Response.data.results[0])
+            setMovie(Response.data.results[1])
         })
     }, []);
 

@@ -5,20 +5,18 @@ import CarouselComponent from './Components/Carousel/CarouselComponent';
 import NavBar from './Components/Navbar/NavBar';
 import Rowpost from './Components/Rowpost/Rowpost';
 import { more, originals } from './urls';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
-
-
-
-
+import {Route,Switch,useHistory} from 'react-router-dom'
 
 
 
 function App() {
+
+  
+
   return (
     <div className="App">
 
-          <Router> 
-           
+         
            <div className="Navbar">
            <NavBar/>   
            </div>
@@ -52,7 +50,7 @@ function App() {
 
          
           
-          </Router>  
+        
     </div>
   );
 }

@@ -9,11 +9,15 @@ function NavBar() {
     const location = useLocation();
 
     const path = location.pathname;
-    let backbtn;
+    let btn;
 
     if(path == '/more')
     {
-        backbtn =  <Link className="mv-nav" to='/' >BACK</Link>; 
+        btn =  <Link className="mv-nav" to='/' >BACK</Link>; 
+    }
+    if(path =='/')
+    {
+        btn = <Link className="mv-nav" to='/more' >MORE SHOWS</Link>
     }
     
 
@@ -22,11 +26,7 @@ function NavBar() {
             <h1 className="logo">NECKFLIX</h1>
 
             
-
-            <Link className="tv-nav" to='/more' >MORE SHOWS</Link>
-
-           
-            {backbtn? backbtn : ''}
+            {btn? btn : ''}
       
         </div>
     )
