@@ -5,7 +5,9 @@ import CarouselComponent from './Components/Carousel/CarouselComponent';
 import NavBar from './Components/Navbar/NavBar';
 import Rowpost from './Components/Rowpost/Rowpost';
 import { more, originals } from './urls';
+import Reviews from './Components/Reviews/Reviews';
 import {Route,Switch,useHistory} from 'react-router-dom'
+
 
 
 
@@ -40,6 +42,11 @@ function App() {
                 <Rowpost  title="" ptype="poster_path" ctype = {more(5)}  more />
                 <Rowpost  title="" ptype="poster_path" ctype = {more(7)}  more />
               </Route>
+              
+              <Route exact path='/reviews'>
+                  <Reviews/>
+              </Route>
+
 
             </Switch>
             

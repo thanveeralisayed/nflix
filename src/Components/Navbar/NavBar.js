@@ -9,16 +9,24 @@ function NavBar() {
     const location = useLocation();
 
     const path = location.pathname;
-    let btn;
+    let btn,reviews;
 
-    if(path == '/more')
+    if(path === '/more' || path === '/reviews')
     {
         btn =  <Link className="mv-nav" to='/' >BACK</Link>; 
+        reviews = <Link className="tv-nav" to='/reviews' >USER REVIEWS</Link>
     }
-    if(path =='/')
+    if(path === '/reviews')
+    {
+        reviews = <Link className="mv-nav" to='/' >BACK</Link>; 
+    }
+
+    if(path ==='/')
     {
         btn = <Link className="mv-nav" to='/more' >MORE SHOWS</Link>
+        reviews = <Link className="tv-nav" to='/reviews' >USER REVIEWS</Link>
     }
+    
     
 
     return (
@@ -27,6 +35,7 @@ function NavBar() {
 
             
             {btn? btn : ''}
+            {reviews}
       
         </div>
     )

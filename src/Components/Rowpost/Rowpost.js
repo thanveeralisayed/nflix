@@ -13,7 +13,7 @@ function Rowpost(props) {
     const [vidkey, setVidkey] = useState()
     
     
-
+    console.log(movies);
 
     useEffect(() => {
 
